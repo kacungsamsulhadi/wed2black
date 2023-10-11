@@ -727,12 +727,12 @@ footer li {
 @media (max-width: 375px) {  
   .hero .heroJudul {
     font-size: 2rem !important;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     /* margin-top: -150px; */
-  }
+  }  
   .hero .myName {
     font-size: 3rem;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     /* margin-bottom: 5px; */
   }
   .hero h4 {
