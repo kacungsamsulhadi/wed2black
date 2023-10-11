@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="style.css" />
   <!-- animations -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-  <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
+  <!-- <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- simplycountdown -->
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
@@ -32,18 +33,25 @@
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
-      <h4 class="heroJudul vov fade-in-down slow">Wedding Invitation</h4cl>
+      <h4 class="heroJudul" data-aos="fade-down" data-aos-duration="1500" data-aos-offset="10">Wedding Invitation</h4cl>
         <!-- <h4 style="font-size: 3rem;">Save the Date</h4> -->
         <!-- <img class="img1" src="img/circle.png" alt="rounded" /> -->
-        <h1 class="myName vov fade-in-left slow">Mr x</h1>
-        <h1 class="myName vov fade-in slowest">&</h1>
-        <h1 class="myName vov fade-in-right slow">Mrs x</h1>
-        <h4 class="vov zoom-in slow">Kami berharap anda menjadi bagian dari hari
+        <h1 class="myName" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="50" data-aos-offset="10">
+          Gabriel</h1>
+        <h1 class="myName" data-aos="zoom-in" data-aos-delay="100">&</h1>
+        <h1 class="myName" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="50" data-aos-offset="10">Dhuwi
+        </h1>
+        <h4 data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="10">Kami berharap anda
+          menjadi bagian dari hari
           istimewa kami.</h4>
-        <div class="simply-countdown mb-2 vov zoom-in slow"></div>
-        <h4 class="vov zoom-in slow">Kepada Bapak/Ibu/Saudara/i,</h4>
-        <h4 class="mt-4 mb-4 vov zoom-in slow">span</h4>
-        <a href=" #home" class="btn btn-lg vov fade-in-up slow" onclick="enableScroll()">Lihat
+        <div class="simply-countdown mb-2" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400"
+          data-aos-offset="10"></div>
+        <h4 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="650" data-aos-offset="10">Kepada
+          Bapak/Ibu/Saudara/i,</h4>
+        <h4 class="mt-4 mb-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="850" data-aos-offset="10">span
+        </h4>
+        <a href=" #home" class="btn btn-lg" onclick="enableScroll()" data-aos="zoom-in" data-aos-duration="1500"
+          data-aos-offset="10">Lihat
           undangan</a>
     </main>
   </section>
@@ -79,10 +87,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <h2 class="vov fade-in-down slow">Acara Pernikahan</h2>
-          <h3 class="vov zoom-in-left slow">
-            Diselenggarakan pada 1 Januari 2024 di Desa X, Jawa Timur</h3>
-          <p class="vov zoom-in-right slower">Tanpa mengurangi rasa hormat, kami
+          <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">Acara Pernikahan</h2>
+          <h3 data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="650">
+            Diselenggarakan pada 25 November 2023 di Plumpang, Jawa Timur</h3>
+          <p data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="750">Tanpa mengurangi rasa hormat, kami
             bermaksud untuk mengundang Bapak/Ibu/Saudara/i untuk hadir pada
             acara resepsi pernikahan kami.</p>
         </div>
@@ -91,14 +99,14 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-8 text-end">
-              <h3>Gabriel</h3>
-              <p>Gabriel Batistuta <br>Ds.
+              <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="50">Gabriel</h3>
+              <p data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="150">Gabriel Batistuta <br>Ds.
                 Plumpang, Kec. Plumpang, Kab. Tuban</p>
-              <p>Putra dari Bpk. Sukican <br> dan
+              <p data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="450">Putra dari Bpk. Sukican <br> dan
                 <br> Ibu Sariyem
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-4" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="50">
               <img src="img/cowok.jpg" alt="Bocil 1" class="img-responsive rounded-circle" />
             </div>
           </div>
@@ -506,7 +514,7 @@
   </script>
 
   <!-- disable scroll -->
-  <!-- <script>
+  <script>
     const rootElement = document.querySelector(":root");
     const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
     const audioIcon = document.querySelector('.audio-icon-wrapper i');
@@ -552,7 +560,7 @@
       isPlaying = !isPlaying;
     }
     disableScroll();    
-  </script> -->
+  </script>
 
   <!-- intercept -->
   <script>
@@ -615,6 +623,23 @@
 
   <!-- disqus -->
   <script id="dsq-count-scr" src="//bocilswedding.disqus.com/count.js" async></script>
+
+  <!-- cdn js link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- wow animate lib-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+
+  <!-- wow init -->
+  <!-- <script>
+    new WOW().init();
+  </script> -->
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    AOS.refreshHard();
+  </script>
 
 </body>
 
