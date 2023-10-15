@@ -30,7 +30,7 @@ body {
 
 .hero {
   position: relative;
-  min-height: 100vh;  
+  min-height: 100vh; 
 }
 
 .hero .myName{
@@ -211,9 +211,11 @@ body {
 .story,
 .galery,
 .rsvp,
-.gifts {
+.gifts,
+.thanks {
   padding-top: 8rem;
   padding-bottom: 8rem;
+  min-height: 100vh;
 }
 
 .story span,
@@ -227,23 +229,17 @@ body {
   display-block;
 }
 
-.galery {
-  height: 100vh;
-}
-.gifts {
-  height: 100vh;
-}
-
 .story h2,
 .galery h2,
-.rsvp h2, {
+.rsvp h2 {
   margin-top: 1rem;
 }
 
 .story p, 
 .galery p,
 .rsvp p,
-.gifts p {
+.gifts p,
+.thanks p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -422,7 +418,7 @@ footer {
 }
 
 footer a {
-  color: var(--bg);
+  color: var(--light);
   font-weight: bold;
   text-decoration: none;
 }
